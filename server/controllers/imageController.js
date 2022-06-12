@@ -25,7 +25,10 @@ export const getAllImages = async (req, res) => {
     queryObject.album = { $regex: album, $options: "i" };
   }
 
-  let images = Image.find(queryObject);
+  let images = await Image.find(queryObject);
+  images = await images.filter(
+    (image) => String(image.creator) === String(req.user.userId)
+  );
 
   const results = await images;
   const numberOfResults = await Image.countDocuments(queryObject);
@@ -41,7 +44,6 @@ export const getOneImage = async (req, res) => {
   }
 
   res.status(200).json({ image });
-  res.send("One image found");
 };
 
 export const updateImage = async (req, res) => {

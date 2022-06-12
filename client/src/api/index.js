@@ -19,5 +19,5 @@ export const updateImage = (id, updatedImage) =>
   API.patch(`/images/${id}`, updatedImage);
 export const deleteImage = (id) => API.delete(`/images/${id}`);
 
-export const register = (newUser) => API.post("/users/register", newUser);
-export const login = (existingUser) => API.post("/users/login", existingUser);
+export const register = (newUser) => API.post("/auth/register", newUser);
+export const login = (existingUser) => API.post("/auth/login", existingUser);

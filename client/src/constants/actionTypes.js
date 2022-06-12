@@ -1,4 +1,4 @@
-export const WAITING_TO_GET = "WAITING_TO_GET";
+export const WAITING_TO_FETCH = "WAITING_TO_FETCH";
 export const DATA_FETCHED = "DATA_FETCHED";
 export const GET_ALL = "GET_ALL";
 
@@ -20,3 +20,4 @@ export const UPDATE_IMAGE_OK = "UPDATE_IMAGE_OK";
 export const UPDATE_IMAGE_FAILED = "UPDATE_IMAGE_FAILED";
 export const GET_ONE_IMAGE_OK = "GET_ONE_IMAGE_OK";
 export const GET_ONE_IMAGE_FAILED = "GET_ONE_IMAGE_FAILED";
+export const CHANGE_ALBUM = "CHANGE_ALBUM";

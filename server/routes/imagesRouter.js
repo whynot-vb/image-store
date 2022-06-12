@@ -17,7 +17,6 @@ router
   .get(authenticateUser, getOneImage)
   .patch(authenticateUser, updateImage)
   .delete(authenticateUser, deleteImage);
-// router.route("/:id").get(getOneImage);
-// .patch(authenticateUser, updateImage)
+//
 
 export default router;
