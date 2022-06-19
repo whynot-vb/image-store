@@ -1,5 +1,11 @@
-- Kreirati web stranicu(e) koja omogucava(ju) korisniku da radi upload JPEG fotografija na njegov account koristeci JavaScript, HTML i potrebne biblioteke. Pretpostaviti da je korisnik vec ulogovan na datu stranicu, te da nije potrebno raditi logovanje na istu, tj da stranica predstavlja ono sto korisnik vidi po logovanju na stranicu.
-- Korisnik moze da pregleda slike koje je vec upload-ovao, menja im imena i organizuje po albumima.
-- Takodje, korisnik moze i da rotira upload-ovane slike.
-- Sve uploadovane fotografije za datog korisnika prikazati na stranici na nacin koji omogucava pregled svih fotografija ali sa dovoljno detalja. Npr: Ukoliko se koriste thumbnailov-i potrebno je omoguciti otvaranje fotografije vece rezolucije klikom; Ili, ukoliko se odlucis za vecu rezoluciju na samoj stranici, onda obezbedi jednostavan sistem skrolovanja. Sustina je da stranica izgleda upotrebljivo.
-  [BONUS] - Stranica izgleda lepo i funkcionalno i na mobilnim pretrazivacima
+### Image Store
+
+This is mern stuck application designed to store images by the users.
+
+### Project Description
+
+The user can see images on the first mount if signed in. If the user is not signed in then he can register or sign-in on the button in the app bar. When the user logs in, all the images are shown on the screen. Users can upload a new image on the form at the top of the screen, or update or delete images that are already on their profile. When the user clicks on the image, he sees the image in full format. Users can rotate images on both sides of the screen.
+
+On the server side, I used Node.js with an express framework for routing and middleware. As for the database for users and images, I used MongoDB. On the front I used React.js, and for managing the global state I used Redux. For testing, I mostly used Redux dev tools. For style, I mostly used material-UI components and CSS.
+
+If you want to clone and use this project you must have your own mongodb url connection, and you must create your json web token secret and expiration date on the .env file on the server side.
